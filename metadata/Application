@@ -1,0 +1,16 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MyTabPanel",
+            "Registration"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

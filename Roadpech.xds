@@ -1,0 +1,72 @@
+{
+    "name": "Roadpech",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": true,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost:8000/Roadpech/",
+        "exportPath": "Z:/Sencha/RoadPech/deploy",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "d57aa5bf-aac0-4b83-ac22-ef8269bb7109": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "52b552f0-9453-4a8c-b4e7-088288b27978": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        },
+        "dd91be5c-f983-4c7b-8fce-cfe14b8bc077": {
+            "paths": [
+                "metadata/view/Registration",
+                "app/view/override/Registration.js",
+                "app/view/Registration.js"
+            ],
+            "className": "Registration"
+        },
+        "1f3e87a0-759d-4edd-9397-2209577ffefa": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "ecd838b4-b809-42eb-a04f-c294a2d9a511": {
+            "paths": [
+                "metadata/resource/packager",
+                "",
+                "packager.json"
+            ],
+            "className": "packager"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "52b552f0-9453-4a8c-b4e7-088288b27978",
+            "dd91be5c-f983-4c7b-8fce-cfe14b8bc077"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "d57aa5bf-aac0-4b83-ac22-ef8269bb7109",
+            "1f3e87a0-759d-4edd-9397-2209577ffefa",
+            "ecd838b4-b809-42eb-a04f-c294a2d9a511"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

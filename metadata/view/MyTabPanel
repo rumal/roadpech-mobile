@@ -1,0 +1,180 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "fade",
+        "designer|userClassName": "MyTabPanel",
+        "designer|initialView": true
+    },
+    "designerId": "52b552f0-9453-4a8c-b4e7-088288b27978",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Register",
+                "iconCls": "compose"
+            },
+            "designerId": "6a8ba9f5-79e8-47a4-b865-fec1cb09b79a",
+            "masterInstanceId": "dd91be5c-f983-4c7b-8fce-cfe14b8bc077"
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Map",
+                "iconCls": "info",
+                "layout": "hbox"
+            },
+            "designerId": "2f19ea7a-4097-4271-a7d7-bce5ef0155cd",
+            "cn": [
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "ui": "light"
+                    },
+                    "designerId": "725dec92-47e6-4816-830d-13d0f835b70d",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Slider",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 3,
+                                "label": null,
+                                "name": ""
+                            },
+                            "designerId": "e125b165-0b6b-4d2b-b660-8cea4101a579"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "ui": "decline",
+                                "iconCls": "arrow_down",
+                                "text": ""
+                            },
+                            "designerId": "bb32c008-cd85-457d-92b2-86f1ead97b96"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "ui": "confirm",
+                                "icon": null,
+                                "iconAlign": "center",
+                                "iconCls": "arrow_up",
+                                "text": ""
+                            },
+                            "designerId": "65e7e1a0-29b2-4f1f-b123-2c42a2db4fbf"
+                        },
+                        {
+                            "type": "Ext.field.Select",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "label": "",
+                                "options": [
+                                    "[{text : 'Accedent', value : 1 },\r",
+                                    " {\r",
+                                    "     text : 'Road block',\r",
+                                    "     value : 2\r",
+                                    " },\r",
+                                    " {\r",
+                                    "     text : 'Protest',\r",
+                                    "     value : 3\r",
+                                    " }\r",
+                                    "]"
+                                ]
+                            },
+                            "designerId": "6709499e-1a58-4cb8-8490-5c9454ea9795"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Map",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "height": "100%",
+                        "width": null,
+                        "mapOptions": [
+                            "{\r",
+                            "center: new google.maps.LatLng (38.909027,-77.037165),\r",
+                            "   mapTypeId: google.maps.MapTypeId.ROADMAP,\r",
+                            "   zoom: 17\r",
+                            "}"
+                        ],
+                        "useCurrentLocation": true
+                    },
+                    "designerId": "9aba2c9d-bd69-43bf-8910-a182656d78e5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "User",
+                "iconCls": "user"
+            },
+            "designerId": "88a7341d-0a59-43c5-ba66-6354bb1d4bf5"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "bottom"
+            },
+            "designerId": "d24244e3-dfa6-40ab-9a62-8918758524bf"
+        }
+    ]
+}
