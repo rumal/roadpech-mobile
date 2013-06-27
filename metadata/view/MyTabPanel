@@ -110,7 +110,7 @@
                                 "layout|flex": 1,
                                 "label": "",
                                 "options": [
-                                    "[{text : 'Accedent', value : 1 },\r",
+                                    "[{text : 'Accident', value : 1 },\r",
                                     " {\r",
                                     "     text : 'Road block',\r",
                                     "     value : 2\r",
@@ -139,7 +139,7 @@
                         "width": null,
                         "mapOptions": [
                             "{\r",
-                            "center: new google.maps.LatLng (38.909027,-77.037165),\r",
+                            "//center: new google.maps.LatLng (38.909027,-77.037165),\r",
                             "   mapTypeId: google.maps.MapTypeId.ROADMAP,\r",
                             "   zoom: 17\r",
                             "}"
