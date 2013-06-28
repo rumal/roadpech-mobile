@@ -112,7 +112,7 @@
                                 "layout|flex": 1,
                                 "label": "",
                                 "options": [
-                                    "[{text : 'Accedent', value : 1 },\r",
+                                    "[{text : 'Accident', value : 1 },\r",
                                     " {\r",
                                     "     text : 'Road block',\r",
                                     "     value : 2\r",
