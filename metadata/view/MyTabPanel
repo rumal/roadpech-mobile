@@ -35,7 +35,7 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Map",
-                "iconCls": "info",
+                "iconCls": "maps",
                 "layout": "hbox"
             },
             "designerId": "2f19ea7a-4097-4271-a7d7-bce5ef0155cd",
@@ -49,6 +49,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "docked": "top",
+                        "height": null,
+                        "maxHeight": null,
                         "ui": "light"
                     },
                     "designerId": "725dec92-47e6-4816-830d-13d0f835b70d",
@@ -136,17 +138,34 @@
                     "userConfig": {
                         "layout|flex": 1,
                         "height": "100%",
-                        "width": null,
-                        "mapOptions": [
-                            "{\r",
-                            "center: new google.maps.LatLng (38.909027,-77.037165),\r",
-                            "   mapTypeId: google.maps.MapTypeId.ROADMAP,\r",
-                            "   zoom: 17\r",
-                            "}"
-                        ],
-                        "useCurrentLocation": true
+                        "itemId": "mymap",
+                        "width": null
                     },
-                    "designerId": "9aba2c9d-bd69-43bf-8910-a182656d78e5"
+                    "designerId": "9aba2c9d-bd69-43bf-8910-a182656d78e5",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMymapInitialize",
+                                "implHandler": [
+                                    "this.setConfig({\r",
+                                    "    mapOptions : {\r",
+                                    "   \t\tcenter: new google.maps.LatLng(6.79724,79.901837), \r",
+                                    "   \t\tmapTypeId: google.maps.MapTypeId.ROADMAP,\r",
+                                    "   \t\tzoom: 17\r",
+                                    "\t}\r",
+                                    "});"
+                                ],
+                                "name": "initialize"
+                            },
+                            "designerId": "8fb5ac60-767b-4eb4-9d91-52179589e705"
+                        }
+                    ]
                 }
             ]
         },
