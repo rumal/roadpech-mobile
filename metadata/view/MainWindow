@@ -1,0 +1,104 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "currentUser": null,
+        "container|animation": "slide",
+        "designer|userClassName": "MainWindow"
+    },
+    "configAlternates": {
+        "vari": "object",
+        "currentUser": "object"
+    },
+    "designerId": "52b552f0-9453-4a8c-b4e7-088288b27978",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "vari",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "currentUser",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Map",
+                "iconCls": "maps"
+            },
+            "designerId": "68a14c2a-7e8d-4626-b73e-f101b1702127",
+            "masterInstanceId": "3f45d525-37bf-4ed1-9207-f243806bab4f"
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Settings",
+                "iconCls": "settings",
+                "hidden": null,
+                "id": null,
+                "designer|createAlias": null,
+                "autoDestroy": null
+            },
+            "designerId": "1ddca4d8-fd6f-4090-bb17-2eb23c964b2a"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cardSwitchAnimation": null,
+                "container|align": "center",
+                "docked": "bottom",
+                "id": "tabbar",
+                "showAnimation": null,
+                "scrollable": null
+            },
+            "designerId": "d24244e3-dfa6-40ab-9a62-8918758524bf",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "cardSwitchAnimation",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTabpanelActivate",
+                "implHandler": [
+                    "console.log(\"onTabpanelActivate\");\r",
+                    ""
+                ],
+                "name": "activate"
+            },
+            "designerId": "e6174a98-2539-495a-802a-572f8763559e"
+        }
+    ]
+}

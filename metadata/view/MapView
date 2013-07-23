@@ -1,0 +1,143 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MapView",
+        "designer|userAlias": "mapView",
+        "layout": "hbox"
+    },
+    "designerId": "3f45d525-37bf-4ed1-9207-f243806bab4f",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": null,
+                "maxHeight": null,
+                "ui": "light"
+            },
+            "designerId": "725dec92-47e6-4816-830d-13d0f835b70d",
+            "cn": [
+                {
+                    "type": "Ext.field.Slider",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 3,
+                        "label": null,
+                        "name": ""
+                    },
+                    "designerId": "e125b165-0b6b-4d2b-b660-8cea4101a579"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "ui": "decline",
+                        "iconCls": "arrow_down",
+                        "text": ""
+                    },
+                    "designerId": "bb32c008-cd85-457d-92b2-86f1ead97b96"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "ui": "confirm",
+                        "icon": null,
+                        "iconAlign": "center",
+                        "iconCls": "arrow_up",
+                        "text": ""
+                    },
+                    "designerId": "65e7e1a0-29b2-4f1f-b123-2c42a2db4fbf"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "label": "",
+                        "options": [
+                            "[{text : 'Accident', value : 1 },\r",
+                            " {\r",
+                            "     text : 'Road block',\r",
+                            "     value : 2\r",
+                            " },\r",
+                            " {\r",
+                            "     text : 'Protest',\r",
+                            "     value : 3\r",
+                            " }\r",
+                            "]"
+                        ]
+                    },
+                    "designerId": "6709499e-1a58-4cb8-8490-5c9454ea9795"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "height": "100%",
+                "itemId": "mymap",
+                "width": null
+            },
+            "designerId": "9aba2c9d-bd69-43bf-8910-a182656d78e5",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMymapInitialize",
+                        "implHandler": [
+                            "this.setConfig({\r",
+                            "    mapOptions : {\r",
+                            "   \t\tcenter: new google.maps.LatLng(6.79724,79.901837), \r",
+                            "   \t\tmapTypeId: google.maps.MapTypeId.ROADMAP,\r",
+                            "   \t\tzoom: 17\r",
+                            "\t}\r",
+                            "});"
+                        ],
+                        "name": "initialize"
+                    },
+                    "designerId": "8fb5ac60-767b-4eb4-9d91-52179589e705"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fullscreen": true,
+        "html": "<h1>Welcome</h1>",
+        "styleHtmlContent": true,
+        "designer|userClassName": "Welcome",
+        "designer|userAlias": "welcomePanel",
+        "designer|initialView": true
+    },
+    "designerId": "dfc6b765-0476-4bd7-bd96-0e43169c9a4e",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "itemId": "btnHide",
+                "margin": "20px",
+                "ui": "action",
+                "text": "Hide"
+            },
+            "designerId": "ff574b1b-c0b0-44a9-aed4-ebe135b90134"
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "itemId": "hideNextTime",
+                "label": "Do not show this window again",
+                "labelAlign": "right",
+                "labelWidth": "",
+                "labelWrap": true
+            },
+            "designerId": "e5c9bba3-dbbc-487b-a809-af7ef52a18cc"
+        },
+        {
+            "type": "delegateeventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onHideTap",
+                "implHandler": [
+                    "if (this.down('checkboxfield#hideNextTime').isChecked()){\r",
+                    "\tlocalStorage.showWelcomeScreen = false;\r",
+                    "}else{\r",
+                    "\tlocalStorage.showWelcomeScreen = true;\r",
+                    "}\r",
+                    "this.destroy();\r",
+                    "RoadPech.app.redirectTo(\"map\");"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "delegate": "button#btnHide"
+            },
+            "designerId": "dc02ddb2-e8c2-462e-b35b-857919e7fd13"
+        }
+    ]
+}

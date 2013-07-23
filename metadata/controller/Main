@@ -1,0 +1,81 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "currentUser": null,
+        "models": [
+            "User"
+        ],
+        "stores": [
+            "Users"
+        ],
+        "views": [
+            "MainWindow",
+            "Welcome"
+        ],
+        "designer|userClassName": "Main"
+    },
+    "configAlternates": {
+        "currentUser": "object"
+    },
+    "designerId": "a0f7775d-aa95-4b8f-971e-86d4bc368947",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "currentUser",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "",
+                "fn": "welcome",
+                "implHandler": [
+                    "var isShown = eval(localStorage.showWelcomeScreen);\r",
+                    "isShown = isShown ? isShown : true;\r",
+                    "if (isShown)\r",
+                    "\tExt.Viewport.setActiveItem(this.getWelcomeScreen());\r",
+                    ""
+                ]
+            },
+            "designerId": "eacb6171-2a44-46ec-a428-ec7790c163fd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "welcomeScreen",
+                "selector": "welcomePanel"
+            },
+            "designerId": "7b7210e1-0935-434c-8dee-51e4d70b8c7c"
+        },
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "map",
+                "fn": "mapHandler"
+            },
+            "designerId": "c9506a60-7eee-43f0-9340-c49e6aa9628f"
+        }
+    ]
+}

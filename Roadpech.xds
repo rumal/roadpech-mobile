@@ -23,19 +23,19 @@
         },
         "52b552f0-9453-4a8c-b4e7-088288b27978": {
             "paths": [
-                "metadata/view/MyTabPanel",
-                "app/view/override/MyTabPanel.js",
-                "app/view/MyTabPanel.js"
+                "metadata/view/MainWindow",
+                "app/view/override/MainWindow.js",
+                "app/view/MainWindow.js"
             ],
-            "className": "MyTabPanel"
+            "className": "MainWindow"
         },
         "dd91be5c-f983-4c7b-8fce-cfe14b8bc077": {
             "paths": [
-                "metadata/view/Registration",
-                "app/view/override/Registration.js",
-                "app/view/Registration.js"
+                "metadata/view/RegistrationView",
+                "app/view/override/RegistrationView.js",
+                "app/view/RegistrationView.js"
             ],
-            "className": "Registration"
+            "className": "RegistrationView"
         },
         "1f3e87a0-759d-4edd-9397-2209577ffefa": {
             "paths": [
@@ -50,16 +50,73 @@
                 "packager.json"
             ],
             "className": "packager"
+        },
+        "ea83bd8a-1bad-42bb-bfd1-219400dfc7e8": {
+            "paths": [
+                "metadata/model/User",
+                "app/model/override/User.js",
+                "app/model/User.js"
+            ],
+            "className": "User"
+        },
+        "3b07fd0a-fecc-4b7e-9157-de9014ccb956": {
+            "paths": [
+                "metadata/store/Users",
+                "app/store/override/Users.js",
+                "app/store/Users.js"
+            ],
+            "className": "Users"
+        },
+        "3f45d525-37bf-4ed1-9207-f243806bab4f": {
+            "paths": [
+                "metadata/view/MapView",
+                "app/view/override/MapView.js",
+                "app/view/MapView.js"
+            ],
+            "className": "MapView"
+        },
+        "a0f7775d-aa95-4b8f-971e-86d4bc368947": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "024c2956-1c0f-4721-aea7-0e87f50996ff": {
+            "paths": [
+                "metadata/controller/UserController",
+                "app/controller/override/UserController.js",
+                "app/controller/UserController.js"
+            ],
+            "className": "UserController"
+        },
+        "dfc6b765-0476-4bd7-bd96-0e43169c9a4e": {
+            "paths": [
+                "metadata/view/Welcome",
+                "app/view/override/Welcome.js",
+                "app/view/Welcome.js"
+            ],
+            "className": "Welcome"
         }
     },
     "viewOrderMap": {
         "view": [
             "52b552f0-9453-4a8c-b4e7-088288b27978",
-            "dd91be5c-f983-4c7b-8fce-cfe14b8bc077"
+            "dd91be5c-f983-4c7b-8fce-cfe14b8bc077",
+            "3f45d525-37bf-4ed1-9207-f243806bab4f",
+            "dfc6b765-0476-4bd7-bd96-0e43169c9a4e"
         ],
-        "store": [],
-        "controller": [],
-        "model": [],
+        "store": [
+            "3b07fd0a-fecc-4b7e-9157-de9014ccb956"
+        ],
+        "controller": [
+            "a0f7775d-aa95-4b8f-971e-86d4bc368947",
+            "024c2956-1c0f-4721-aea7-0e87f50996ff"
+        ],
+        "model": [
+            "ea83bd8a-1bad-42bb-bfd1-219400dfc7e8"
+        ],
         "resource": [
             "d57aa5bf-aac0-4b83-ac22-ef8269bb7109",
             "1f3e87a0-759d-4edd-9397-2209577ffefa",

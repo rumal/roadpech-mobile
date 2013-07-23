@@ -8,16 +8,16 @@
     "userConfig": {
         "currentUser": null,
         "settings": [
-            "{}\r",
-            ""
-        ],
-        "models": [
-            "Settings"
+            "{\r",
+            "\t\r",
+            "}"
         ],
         "controllers": [
-            "Main"
+            "Main",
+            "UserController"
         ],
-        "name": "RoadPech"
+        "name": "RoadPech",
+        "statusBarStyle": "black-translucent"
     },
     "configAlternates": {
         "currentUser": "object",

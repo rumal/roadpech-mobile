@@ -1,0 +1,236 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "currentUser": null,
+        "models": [
+            "User"
+        ],
+        "stores": [
+            "Users"
+        ],
+        "views": [
+            "RegistrationView"
+        ],
+        "designer|userClassName": "UserController"
+    },
+    "configAlternates": {
+        "currentUser": "object"
+    },
+    "designerId": "024c2956-1c0f-4721-aea7-0e87f50996ff",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "currentUser",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onYesTap",
+                "implHandler": [
+                    "var username = this.getUsername().text();\r",
+                    "var password = this.getPassword().text();\r",
+                    "\r",
+                    "if(button.getText()==\"Register\"){\r",
+                    "    var email = this.getEmail().text();\r",
+                    "    this.Register(username, email, password);\r",
+                    "\r",
+                    "}else if (button.getText()==\"Login\"){\r",
+                    "    this.Login(username, password);\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#btnYes"
+            },
+            "designerId": "f1a353c9-69d4-43a5-aca7-a6287c9df186"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "fieldset",
+                "selector": "#regTitle"
+            },
+            "designerId": "65c3eba6-bae3-4d55-bce1-be045eb2571e"
+        },
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "login",
+                "fn": "loginHandler",
+                "implHandler": [
+                    "console.log('sd');\r",
+                    "this.getFieldset().setTitle(\"Login\");\r",
+                    "this.getUsername().hide();\r",
+                    "this.getBtnYes().setText('Login');\r",
+                    "this.getBtnNo().setText('Register');"
+                ]
+            },
+            "designerId": "09452fce-a732-45f5-a7f1-95ae8768df62"
+        },
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "register",
+                "fn": "registerHandler",
+                "implHandler": [
+                    "this.getFieldset().setTitle(\"Register\");\r",
+                    "this.getUsername().show();\r",
+                    "this.getBtnNo().setText('Login');\r",
+                    "this.getBtnYes().setText('Register');"
+                ]
+            },
+            "designerId": "dfcb2754-b415-44f1-981a-9dd4efe4300e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "username",
+                "selector": "#username"
+            },
+            "designerId": "e9fd8fca-b21e-485a-9e85-f56beaaca605"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "email",
+                "selector": "#email"
+            },
+            "designerId": "f16640d5-0781-4d43-a75c-f34d02830a3b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "password",
+                "selector": "#password"
+            },
+            "designerId": "26ba555d-7811-4710-b2c7-f7bf8c9adc93"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "btnYes",
+                "selector": "#btnYes"
+            },
+            "designerId": "1a314c3f-65ec-44e1-a36d-a0a8d90d4b6e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "btnNo",
+                "selector": "#btnNo"
+            },
+            "designerId": "ddc08dcf-4d54-41eb-b480-9722ad3d4ce1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNoTap",
+                "implHandler": [
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#btnNo"
+            },
+            "designerId": "b3adad1e-1730-4ee9-8d96-68a9fe42a7ff"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Login",
+                "designer|params": [
+                    "username",
+                    "password"
+                ],
+                "implHandler": [
+                    "console.log('Login in with '+username+\" \"+password);"
+                ]
+            },
+            "designerId": "adfe6078-db87-4cf9-acd2-9f1c0499f083"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "Register",
+                "designer|params": [
+                    "username",
+                    "email",
+                    "password"
+                ],
+                "implHandler": [
+                    "console.log('Login in with '+username+\" \"+email+\" \"+password);"
+                ]
+            },
+            "designerId": "2a3fae0e-3b90-4bed-aab2-e1c7743f9142"
+        }
+    ]
+}
